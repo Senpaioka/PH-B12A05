@@ -14,22 +14,282 @@
 </head>
 <body>
     
-    <header>
-        <nav>
-            nav
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container w-full max-w-7xl mx-auto flex flex-wrap justify-between items-center py-3">
+            
+                <!-- Logo -->
+                <div class="nav__logo flex items-center">
+                    <div class="w-[50px]">
+                        <img class="nav__logo--img w-full h-auto" src="assets/logo.png" alt="logo">
+                    </div>
+                    <div class="ml-3 nav__heading">
+                        <h1 class="hind-madurai-bold text-2xl text-[#006747]">Emergency</h1>
+                        <h1 class="hind-madurai-bold text-2xl text-[#006747]">Service</h1>
+                    </div>
+                </div>
+
+                <!-- Options -->
+                <div class="nav__option flex items-center gap-6">
+                    
+                    <div class="flex items-center gap-2 bg-[#ecfff0] px-7 py-3 rounded-3xl">
+                        <h3 class="nav__option--life hind-madurai-bold text-xl">0</h3>
+                        <img src="assets/heart.png" alt="heart" class="w-6 h-6 object-contain">
+                    </div>
+
+                    <div class="flex items-center gap-2 bg-[#ecfff0] px-7 py-3 rounded-3xl">
+                        <h3 class="nav__option--coin hind-madurai-bold text-xl">100</h3>
+                        <img src="assets/coin.png" alt="coin" class="w-6 h-6 object-contain">
+                    </div>
+
+                    <div>
+                        <button class="bg-green-600 text-white hover:bg-green-700 open-sans-regular text-md px-7 py-3 rounded-3xl">2 Copy</button>
+                    </div>
+                </div>
+
+            </div>
         </nav>
     </header>
 
 
+
     <main>
-        <section>
-            section
+        <!-- hero -->
+        <section class="hero bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-5">
+            <div class="hero__container w-full max-w-7xl mx-auto text-center">
+                <div class="w-[80px] mx-auto">
+                    <img class="w-full h-auto" src="assets/logo-dark.png" alt="hero_logo">
+                </div>
+                <h1 class="hind-madurai-bold text-3xl text-white p-3">Emergency Service Directory</h1>
+                <p class="hind-madurai-semibold text-xl text-white px-3">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            </div>
         </section>
+
+
+        <!-- services -->
+        <section class="service bg-[var(--color-bg-main)] py-10">
+            <div class="service__container w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+                <div class="service__item bg-white p-5 shadow-md rounded-xl">
+                    <div class="service__icon flex justify-between items-center">
+                        <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/emergency.png" alt="emergency"></div>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                    </div>
+
+                    <div class="service__text mt-3">
+                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">National Emergency Number</h3>
+                        <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">National Emergency</p>
+                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">999</h1>
+                        <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">All</span>
+                    </div>
+
+                    <div class="service__button flex justify-evenly items-center gap-3 mt-5">
+                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+
+                <div class="service__item bg-white p-5 shadow-md rounded-xl">
+                    <div class="service__icon flex justify-between items-center">
+                        <div class="w-[50px] bg-blue-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/police.png" alt="police"></div>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                    </div>
+
+                    <div class="service__text mt-3">
+                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Police Helpline Number</h3>
+                        <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Police</p>
+                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">999</h1>
+                        <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Police</span>
+                    </div>
+
+                    <div class="service__button flex justify-evenly items-center gap-3 mt-5">
+                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+
+                <div class="service__item bg-white p-5 shadow-md rounded-xl">
+                    <div class="service__icon flex justify-between items-center">
+                        <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/fire-service.png" alt="fire"></div>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                    </div>
+
+                    <div class="service__text mt-3">
+                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Fire Service Number</h3>
+                        <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Fire Service</p>
+                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">999</h1>
+                        <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Fire</span>
+                    </div>
+
+                    <div class="service__button flex justify-evenly items-center gap-3 mt-5">
+                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+                
+
+                <div class="service__item bg-white p-5 shadow-md rounded-xl">
+                    <div class="service__icon flex justify-between items-center">
+                        <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/ambulance.png" alt="ambulance"></div>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                    </div>
+
+                    <div class="service__text mt-3">
+                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Ambulance Service</h3>
+                        <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Ambulance</p>
+                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">1994-999999</h1>
+                        <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Health</span>
+                    </div>
+
+                    <div class="service__button flex justify-evenly items-center gap-3 mt-5">
+                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+
+                <div class="service__item bg-white p-5 shadow-md rounded-xl">
+                    <div class="service__icon flex justify-between items-center">
+                        <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/emergency.png" alt="women&child"></div>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                    </div>
+
+                    <div class="service__text mt-3">
+                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Women & Child Helpline</h3>
+                        <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Women & Child Safety</p>
+                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">109</h1>
+                        <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Help</span>
+                    </div>
+
+                    <div class="service__button flex justify-evenly items-center gap-3 mt-5">
+                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+
+                <div class="service__item bg-white p-5 shadow-md rounded-xl">
+                    <div class="service__icon flex justify-between items-center">
+                        <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/emergency.png" alt="anti-corruption"></div>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                    </div>
+
+                    <div class="service__text mt-3">
+                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Anti-Corruption Helpline</h3>
+                        <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Anti-Corruption</p>
+                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">106</h1>
+                        <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Govt</span>
+                    </div>
+
+                    <div class="service__button flex justify-evenly items-center gap-3 mt-5">
+                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+
+                <div class="service__item bg-white p-5 shadow-md rounded-xl">
+                    <div class="service__icon flex justify-between items-center">
+                        <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/emergency.png" alt="electricity"></div>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                    </div>
+
+                    <div class="service__text mt-3">
+                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Electricity Helpline</h3>
+                        <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Electricity Outage</p>
+                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">16216</h1>
+                        <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Electricity</span>
+                    </div>
+
+                    <div class="service__button flex justify-evenly items-center gap-3 mt-5">
+                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+
+                <div class="service__item bg-white p-5 shadow-md rounded-xl">
+                    <div class="service__icon flex justify-between items-center">
+                        <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/brac.png" alt="brac"></div>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                    </div>
+
+                    <div class="service__text mt-3">
+                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Brac Helpline</h3>
+                        <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Brac</p>
+                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">16446</h1>
+                        <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">NGO</span>
+                    </div>
+
+                    <div class="service__button flex justify-evenly items-center gap-3 mt-5">
+                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+
+                <div class="service__item bg-white p-5 shadow-md rounded-xl">
+                    <div class="service__icon flex justify-between items-center">
+                        <div class="w-[50px] bg-yellow-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/Bangladesh-Railway.png" alt="railway"></div>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                    </div>
+
+                    <div class="service__text mt-3">
+                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Bangladesh Railway Helpline</h3>
+                        <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Bangladesh Railway</p>
+                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">163</h1>
+                        <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Travel</span>
+                    </div>
+
+                    <div class="service__button flex justify-evenly items-center gap-3 mt-5">
+                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+
+                <div class="service__item bg-white p-5 shadow-md rounded-xl col-start-4 row-start-1 row-span-3">
+                    <div class="flex justify-between items-center pb-3">
+                        <h3 class="hind-madurai-semibold text-[var(--color-text-bold)] text-xl"><i class="fa-solid fa-clock-rotate-left"></i> Call History</h3>
+                        <button class="bg-green-600 text-white hover:bg-green-700 open-sans-regular text-md px-5 py-2 rounded-3xl shrink-1">Clear</button>
+                    </div>
+
+                    <div class="history__notification flex justify-between items-center bg-gray-100 px-2 py-3 rounded-md my-3">
+                        <div class="history__text">
+                            <h3 class="hind-madurai-medium text-[var(--color-text-bold)] text-md">Fire Service Number</h3>
+                            <span class="open-sans-regular text-sm text-[var(--color-text-grey)]">999</span>
+                        </div>
+                        <div class="history__time">
+                            <p class="open-sans-regular text-sm text-[var(--color-text-bold)]">11:38:58 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="history__notification flex justify-between items-center bg-gray-100 px-2 py-3 rounded-md my-3">
+                        <div class="history__text">
+                            <h3 class="hind-madurai-medium text-[var(--color-text-bold)] text-md">Fire Service Number</h3>
+                            <span class="open-sans-regular text-sm text-[var(--color-text-grey)]">999</span>
+                        </div>
+                        <div class="history__time">
+                            <p class="open-sans-regular text-sm text-[var(--color-text-bold)]">11:38:58 AM</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
 
     <footer>
-        footer
+        <div class="w-full max-w-7xl mx-auto text-center p-5">
+            <p>Portal@2025 </p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
