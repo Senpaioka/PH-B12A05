@@ -108,6 +108,7 @@ document.addEventListener('click', async function(event){
         try {
             await navigator.clipboard.writeText(text)
             event.target.textContent = "Copied!"
+            alert(`Copied: ${text}`)
         } catch (err) {
             console.error("Failed to copy: ", err)
         }
