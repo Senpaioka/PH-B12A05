@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="js/main.js"></script>
 </head>
 <body>
     
@@ -44,7 +45,7 @@
                     </div>
 
                     <div>
-                        <button class="bg-green-600 text-white hover:bg-green-700 open-sans-regular text-md px-7 py-3 rounded-3xl">2 Copy</button>
+                        <button class="copy_counter bg-green-600 text-white hover:bg-green-700 open-sans-regular text-md px-7 py-3 rounded-3xl">0 Copy</button>
                     </div>
                 </div>
 
@@ -74,19 +75,19 @@
                 <div class="service__item bg-white p-5 shadow-md rounded-xl">
                     <div class="service__icon flex justify-between items-center">
                         <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/emergency.png" alt="emergency"></div>
-                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer service__like"></i>
                     </div>
 
                     <div class="service__text mt-3">
-                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">National Emergency Number</h3>
+                        <h3 class="service__name hind-madurai-bold text-xl text-[var(--color-text-bold)]">National Emergency Number</h3>
                         <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">National Emergency</p>
-                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">999</h1>
+                        <h1 class="service__phone hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">999</h1>
                         <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">All</span>
                     </div>
 
                     <div class="service__button flex justify-evenly items-center gap-3 mt-5">
-                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy__number border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="service__call bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
 
@@ -94,19 +95,19 @@
                 <div class="service__item bg-white p-5 shadow-md rounded-xl">
                     <div class="service__icon flex justify-between items-center">
                         <div class="w-[50px] bg-blue-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/police.png" alt="police"></div>
-                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer service__like"></i>
                     </div>
 
                     <div class="service__text mt-3">
-                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Police Helpline Number</h3>
+                        <h3 class="service__name hind-madurai-bold text-xl text-[var(--color-text-bold)]">Police Helpline Number</h3>
                         <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Police</p>
-                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">999</h1>
+                        <h1 class="service__phone hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">999</h1>
                         <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Police</span>
                     </div>
 
                     <div class="service__button flex justify-evenly items-center gap-3 mt-5">
-                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy__number border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="service__call bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
 
@@ -114,19 +115,19 @@
                 <div class="service__item bg-white p-5 shadow-md rounded-xl">
                     <div class="service__icon flex justify-between items-center">
                         <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/fire-service.png" alt="fire"></div>
-                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer service__like"></i>
                     </div>
 
                     <div class="service__text mt-3">
-                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Fire Service Number</h3>
+                        <h3 class="service__name hind-madurai-bold text-xl text-[var(--color-text-bold)]">Fire Service Number</h3>
                         <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Fire Service</p>
-                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">999</h1>
+                        <h1 class="service__phone hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">999</h1>
                         <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Fire</span>
                     </div>
 
                     <div class="service__button flex justify-evenly items-center gap-3 mt-5">
-                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy__number border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="service__call bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
 
@@ -135,19 +136,19 @@
                 <div class="service__item bg-white p-5 shadow-md rounded-xl">
                     <div class="service__icon flex justify-between items-center">
                         <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/ambulance.png" alt="ambulance"></div>
-                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer service__like"></i>
                     </div>
 
                     <div class="service__text mt-3">
-                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Ambulance Service</h3>
+                        <h3 class="service__name hind-madurai-bold text-xl text-[var(--color-text-bold)]">Ambulance Service</h3>
                         <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Ambulance</p>
-                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">1994-999999</h1>
+                        <h1 class="service__phone hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">1994-999999</h1>
                         <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Health</span>
                     </div>
 
                     <div class="service__button flex justify-evenly items-center gap-3 mt-5">
-                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy__number border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="service__call bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
 
@@ -155,19 +156,19 @@
                 <div class="service__item bg-white p-5 shadow-md rounded-xl">
                     <div class="service__icon flex justify-between items-center">
                         <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/emergency.png" alt="women&child"></div>
-                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer service__like"></i>
                     </div>
 
                     <div class="service__text mt-3">
-                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Women & Child Helpline</h3>
+                        <h3 class="service__name hind-madurai-bold text-xl text-[var(--color-text-bold)]">Women & Child Helpline</h3>
                         <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Women & Child Safety</p>
-                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">109</h1>
+                        <h1 class="service__phone hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">109</h1>
                         <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Help</span>
                     </div>
 
                     <div class="service__button flex justify-evenly items-center gap-3 mt-5">
-                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy__number border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="service__call bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
 
@@ -175,19 +176,19 @@
                 <div class="service__item bg-white p-5 shadow-md rounded-xl">
                     <div class="service__icon flex justify-between items-center">
                         <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/emergency.png" alt="anti-corruption"></div>
-                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer service__like"></i>
                     </div>
 
                     <div class="service__text mt-3">
-                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Anti-Corruption Helpline</h3>
+                        <h3 class="service__name hind-madurai-bold text-xl text-[var(--color-text-bold)]">Anti-Corruption Helpline</h3>
                         <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Anti-Corruption</p>
-                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">106</h1>
+                        <h1 class="service__phone hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">106</h1>
                         <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Govt</span>
                     </div>
 
                     <div class="service__button flex justify-evenly items-center gap-3 mt-5">
-                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy__number border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="service__call bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
 
@@ -195,19 +196,19 @@
                 <div class="service__item bg-white p-5 shadow-md rounded-xl">
                     <div class="service__icon flex justify-between items-center">
                         <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/emergency.png" alt="electricity"></div>
-                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer service__like"></i>
                     </div>
 
                     <div class="service__text mt-3">
-                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Electricity Helpline</h3>
+                        <h3 class="service__name hind-madurai-bold text-xl text-[var(--color-text-bold)]">Electricity Helpline</h3>
                         <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Electricity Outage</p>
-                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">16216</h1>
+                        <h1 class="service__phone hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">16216</h1>
                         <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Electricity</span>
                     </div>
 
                     <div class="service__button flex justify-evenly items-center gap-3 mt-5">
-                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy__number border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="service__call bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
 
@@ -215,19 +216,19 @@
                 <div class="service__item bg-white p-5 shadow-md rounded-xl">
                     <div class="service__icon flex justify-between items-center">
                         <div class="w-[50px] bg-pink-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/brac.png" alt="brac"></div>
-                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer service__like"></i>
                     </div>
 
                     <div class="service__text mt-3">
-                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Brac Helpline</h3>
+                        <h3 class="service__name hind-madurai-bold text-xl text-[var(--color-text-bold)]">Brac Helpline</h3>
                         <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Brac</p>
-                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">16446</h1>
+                        <h1 class="service__phone hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">16446</h1>
                         <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">NGO</span>
                     </div>
 
                     <div class="service__button flex justify-evenly items-center gap-3 mt-5">
-                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy__number border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="service__call bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
 
@@ -235,48 +236,40 @@
                 <div class="service__item bg-white p-5 shadow-md rounded-xl">
                     <div class="service__icon flex justify-between items-center">
                         <div class="w-[50px] bg-yellow-100 rounded-xl p-3"><img class="w-full h-auto" src="assets/Bangladesh-Railway.png" alt="railway"></div>
-                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer"></i>
+                        <i class="fa-regular fa-heart text-xl text-[var(--color-text-grey)] cursor-pointer service__like"></i>
                     </div>
 
                     <div class="service__text mt-3">
-                        <h3 class="hind-madurai-bold text-xl text-[var(--color-text-bold)]">Bangladesh Railway Helpline</h3>
+                        <h3 class="service__name hind-madurai-bold text-xl text-[var(--color-text-bold)]">Bangladesh Railway Helpline</h3>
                         <p class="open-sans-regular text-sm text-[var(--color-text-grey)]">Bangladesh Railway</p>
-                        <h1 class="hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">163</h1>
+                        <h1 class="service__phone hind-madurai-bold text-2xl text-[var(--color-text-bold)] mt-3">163</h1>
                         <span class="open-sans-regular text-sm text-[var(--color-text-grey)] bg-gray-200 px-4 py-1 rounded-xl">Travel</span>
                     </div>
 
                     <div class="service__button flex justify-evenly items-center gap-3 mt-5">
-                        <button class="border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy__number border border-gray-200 w-full px-3 py-1 rounded-md text-[var(--color-text-grey)] cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="service__call bg-[var(--color-primary)] w-full px-3 py-1 rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
 
                 <!-- call history -->
 
-                <div class="service__item bg-white p-5 shadow-md rounded-xl col-start-1 row-start-1 row-span-3 md:col-start-2 md:row-start-1 md:row-span-3 lg:col-start-4 lg:row-start-1 lg:row-span-3">
-                    <div class="flex justify-between items-center pb-3">
+                <div class=" service__history bg-white p-5 shadow-md rounded-xl col-start-1 row-start-1 row-span-3 md:col-start-2 md:row-start-1 md:row-span-3 lg:col-start-4 lg:row-start-1 lg:row-span-3">
+                    <div class="history__option flex justify-between items-center pb-3">
                         <h3 class="hind-madurai-semibold text-[var(--color-text-bold)] text-xl"><i class="fa-solid fa-clock-rotate-left"></i> Call History</h3>
-                        <button class="bg-green-600 text-white hover:bg-green-700 open-sans-regular text-md px-5 py-2 rounded-3xl cursor-pointer">Clear</button>
+                        <button class="clear__history bg-green-600 text-white hover:bg-green-700 open-sans-regular text-md px-5 py-2 rounded-3xl cursor-pointer">Clear</button>
                     </div>
 
-                    <div class="history__notification flex justify-between items-center bg-gray-100 px-2 py-3 rounded-md my-3">
-                        <div class="history__text">
-                            <h3 class="hind-madurai-medium text-[var(--color-text-bold)] text-md">Fire Service Number</h3>
-                            <span class="open-sans-regular text-sm text-[var(--color-text-grey)]">999</span>
-                        </div>
-                        <div class="history__time">
-                            <p class="open-sans-regular text-sm text-[var(--color-text-bold)]">11:38:58 AM</p>
-                        </div>
-                    </div>
-
-                    <div class="history__notification flex justify-between items-center bg-gray-100 px-2 py-3 rounded-md my-3">
-                        <div class="history__text">
-                            <h3 class="hind-madurai-medium text-[var(--color-text-bold)] text-md">Fire Service Number</h3>
-                            <span class="open-sans-regular text-sm text-[var(--color-text-grey)]">999</span>
-                        </div>
-                        <div class="history__time">
-                            <p class="open-sans-regular text-sm text-[var(--color-text-bold)]">11:38:58 AM</p>
-                        </div>
+                    <div class="service__history--items">
+                        <!-- <div class="history__notification flex justify-between items-center bg-gray-100 px-2 py-3 rounded-md my-3">
+                            <div class="history__text">
+                                <h3 class="hind-madurai-medium text-[var(--color-text-bold)] text-md">Fire Service Number</h3>
+                                <span class="open-sans-regular text-sm text-[var(--color-text-grey)]">999</span>
+                            </div>
+                            <div class="history__time">
+                                <p class="open-sans-regular text-sm text-[var(--color-text-bold)]">11:38:58 AM</p>
+                            </div>
+                        </div> -->
                     </div>
 
                 </div>
@@ -293,6 +286,5 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 </html>
