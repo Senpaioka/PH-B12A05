@@ -17,7 +17,7 @@
 
     <header class="header">
         <nav class="nav">
-            <div class="nav__container w-full max-w-7xl mx-auto flex flex-wrap justify-between items-center py-3">
+            <div class="nav__container w-full max-w-7xl mx-auto flex flex-wrap justify-between items-center py-3 px-3">
             
                 <!-- Logo -->
                 <div class="nav__logo flex items-center">
@@ -69,7 +69,7 @@
 
         <!-- services -->
         <section class="service bg-[var(--color-bg-main)] py-10">
-            <div class="service__container w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div class="service__container w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 
                 <div class="service__item bg-white p-5 shadow-md rounded-xl">
                     <div class="service__icon flex justify-between items-center">
@@ -251,11 +251,12 @@
                     </div>
                 </div>
 
+                <!-- call history -->
 
-                <div class="service__item bg-white p-5 shadow-md rounded-xl col-start-4 row-start-1 row-span-3">
+                <div class="service__item bg-white p-5 shadow-md rounded-xl col-start-1 row-start-1 row-span-3 md:col-start-2 md:row-start-1 md:row-span-3 lg:col-start-4 lg:row-start-1 lg:row-span-3">
                     <div class="flex justify-between items-center pb-3">
                         <h3 class="hind-madurai-semibold text-[var(--color-text-bold)] text-xl"><i class="fa-solid fa-clock-rotate-left"></i> Call History</h3>
-                        <button class="bg-green-600 text-white hover:bg-green-700 open-sans-regular text-md px-5 py-2 rounded-3xl shrink-1">Clear</button>
+                        <button class="bg-green-600 text-white hover:bg-green-700 open-sans-regular text-md px-5 py-2 rounded-3xl cursor-pointer">Clear</button>
                     </div>
 
                     <div class="history__notification flex justify-between items-center bg-gray-100 px-2 py-3 rounded-md my-3">
